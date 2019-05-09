@@ -1,0 +1,9 @@
+- name: Recursively remove packages
+  pacman:
+    name: "{{ item }}"
+    state: absent
+    recurse: yes
+  with_items:
+    - thunderbird
+    - vlc
+  become: yes

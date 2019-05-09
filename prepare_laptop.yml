@@ -1,0 +1,35 @@
+- hosts: localhost
+  vars:
+    user: eyad
+    installer_user: aur_builder # this is needed since aur doesn't like to install with root 
+  pre_tasks:
+    - name: update pacman cache
+      pacman:
+        update_cache: yes
+    - name: create user "{{ installer_user }}"
+      user: name="{{ installer_user }}" group=wheel
+    - lineinfile:
+        path: /etc/sudoers.d/11-install-"{{ installer_user }}"
+        line: '"{{ installer_user }}" ALL=(ALL) NOPASSWD: /usr/bin/pacman'
+        create: yes
+        validate: 'visudo -cf %s'
+  become: yes 
+
+  tasks:
+    - include_tasks: tasks/install_requirements.yml
+    - include_tasks: tasks/internet.yml
+    - include_tasks: tasks/fonts.yml
+    - include_tasks: tasks/development.yml
+    - include_tasks: tasks/multimedia.yml
+    - include_tasks: tasks/office.yml
+    - include_tasks: tasks/terminal.yml
+#    - include_tasks: tasks/others.yml
+    - include_tasks: tasks/remove_packages.yml
+
+  post_tasks:
+    - name: Remove the user "{{ installer_user }}"
+      user:
+        name: "{{ installer_user }}"
+        state: absent
+        remove: yes
+

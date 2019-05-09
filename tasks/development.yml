@@ -1,0 +1,47 @@
+- name: Install software development tools
+  aur:
+    name: "{{ item }}"
+    skip_installed: true
+  with_items:
+    - micro
+    - tig
+    - git
+    - highlight
+    - visual-studio-code-bin
+    - docker
+    - docker-machine
+    - docker-compose
+    - miniconda3
+    - nnn
+  #  - kr
+  become: yes
+  become_user: "{{ installer_user }}"
+
+- name: Install visual studio extensions
+  include_role:
+    name: gantsign.visual-studio-code-extensions
+  vars:
+    users:
+      - username: "{{ user }}"
+        visual_studio_code_extensions:
+          - ms-python.python
+          - redhat.vscode-yaml
+          - vscoss.vscode-ansible
+          - tyriar.sort-lines
+          - christian-kohler.path-intellisense
+          - akamud.vscode-theme-onedark
+          - mechatroner.rainbow-csv
+        visual_studio_code_extensions_absent:
+          - seanmcbreen.Spell
+    become: true
+    become_user: "{{ user }}"
+
+- name: set default shell for users
+  become: yes
+  user:
+    name: '{{ user }}'
+    shell: /bin/zsh
+
+
+# TODO install oh-my-zsh
+# install conda

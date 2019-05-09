@@ -1,0 +1,12 @@
+- name: Install apps
+  aur:
+    name: "{{ item }}"
+    skip_installed: true
+  with_items:
+    # Docs and PDF
+    - zathura
+    - wps-office
+    - pdftk-bin
+    - mupdf
+  become: yes
+  become_user: "{{ installer_user }}"

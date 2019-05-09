@@ -1,0 +1,30 @@
+          - arandr
+          - dropbox
+          - networkmanager-dmenu
+          - notmuch
+          - offlineimap
+          - pulsemixer
+          - python-i3-py
+          - python-pretty-cron
+          - rofi
+          - rofi-calc
+          - rofi-emoji
+          - rofi-scripts
+          - units
+          - wine
+          - zeal
+          # - advanced-ssh-config
+          # - etcher
+          # - hostsblock?
+          # - https://github.com/alexanderjeurissen/ranger_devicons
+          # - kshutdown
+          # - libaacs
+          # - libmpcdec
+          # - onedrive
+          # - playerctl
+          # - python-httplib2 # for calcurse-caldav
+          # - python-pywal
+          # - safeeyes
+          # - sc-im
+          # - timeshift
+          # - wavpack

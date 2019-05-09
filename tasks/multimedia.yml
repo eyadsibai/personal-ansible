@@ -1,0 +1,18 @@
+- name: Install apps
+  aur:
+    name: "{{ item }}"
+    skip_installed: true
+  with_items:
+    # Media
+    - youtube-dl
+    - mpv
+    - cmus
+    # - spotify
+    - youtube-viewer
+    # - ncmpcpp
+    - mpd
+    # - cava
+    # - cli-visualizer
+    # - youtube-dl-gui-git
+  become: yes
+  become_user: "{{ installer_user }}"

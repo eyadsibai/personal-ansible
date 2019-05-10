@@ -6,7 +6,7 @@
     # - alacritty
     # - mlterm
     # - termite
-    # - hyper
+    - hyper
     - curl
     - ack
     - parallel
@@ -29,6 +29,7 @@
     - calcurse
     - thefuck
     - tree
+    - st-luke-git
     # - lastpass-cli
   become: yes
   become_user: "{{ installer_user }}"

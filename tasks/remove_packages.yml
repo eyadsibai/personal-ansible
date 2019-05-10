@@ -6,4 +6,6 @@
   with_items:
     - thunderbird
     - vlc
+    - micro-manjaro
+    - st-manjaro
   become: yes

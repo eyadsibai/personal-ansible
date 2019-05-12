@@ -8,4 +8,6 @@
     - vlc
     - micro-manjaro
     - st-manjaro
+    - hexchat
+    - pidgin
   become: yes

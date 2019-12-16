@@ -12,8 +12,8 @@
     - zoom
     - slack-desktop-dark
     - qutebrowser
-    # - brave
-    - google-chrome
+    - brave
+    # - google-chrome
     # - whatsie
     # Email, News, Podcasts, and RSS
     - neomutt

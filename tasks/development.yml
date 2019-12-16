@@ -12,6 +12,7 @@
     - docker-machine
     - docker-compose
     - nnn
+    - gcc-fortran
   #  - kr
   become: yes
   become_user: "{{ installer_user }}"
@@ -30,6 +31,8 @@
           - christian-kohler.path-intellisense
           - akamud.vscode-theme-onedark
           - mechatroner.rainbow-csv
+          - shyykoserhiy.vscode-spotify
+
         visual_studio_code_extensions_absent:
           - seanmcbreen.Spell
     become: true

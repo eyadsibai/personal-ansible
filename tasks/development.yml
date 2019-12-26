@@ -43,9 +43,9 @@
   user:
     name: '{{ user }}'
     shell: /bin/zsh
-- name: install oh-my-zsh
-  become: yes
-  become_user: "{{ user }}"
+# - name: install oh-my-zsh
+#   become: yes
+#   become_user: "{{ user }}"
 
 
 # TODO install oh-my-zsh

@@ -10,6 +10,6 @@
           - ttf-sil-scheherazade
           - ttf-linux-libertine
           - ttf-inconsolata
-          - ttf-emojione
+#           - ttf-emojione
         become: yes
         become_user: "{{ installer_user }}"

@@ -3,17 +3,16 @@
     name: "{{ item }}"
     skip_installed: true
   with_items:
-    - teams-for-linux
     - discord
     - android-messages-desktop
     # - yakyak
     - caprine
     - telegram-desktop
     - zoom
-    - slack-desktop-dark
+    - slack-desktop
     - qutebrowser
     - brave
-    # - google-chrome
+    - google-chrome
     # - whatsie
     # Email, News, Podcasts, and RSS
     - neomutt
@@ -32,3 +31,4 @@
     - signal-desktop-bin
   become: yes
   become_user: "{{ installer_user }}"
+  

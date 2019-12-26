@@ -5,8 +5,8 @@
   with_items:
     # Docs and PDF
     - zathura
-    - wps-office
-    - pdftk-bin
+    - pdftk
     - mupdf
   become: yes
   become_user: "{{ installer_user }}"
+  

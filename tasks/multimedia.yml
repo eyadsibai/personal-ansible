@@ -7,9 +7,9 @@
     - youtube-dl
     - mpv
     - cmus
-    # - spotify
+    - spotify
     - youtube-viewer
-    # - ncmpcpp
+    - ncmpcpp
     - mpd
     # - cava
     # - cli-visualizer

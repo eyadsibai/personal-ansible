@@ -10,4 +10,6 @@
     - st-manjaro
     - hexchat
     - pidgin
+    - whatsapp-nativefier
+    - palemoon-bin
   become: yes

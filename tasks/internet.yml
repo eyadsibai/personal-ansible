@@ -28,7 +28,7 @@
     - teamviewer
     - whatsapp-nativefier-dark
     - dropbox
-    - signal-desktop-bin
+    - signal-desktop
   become: yes
   become_user: "{{ installer_user }}"
   

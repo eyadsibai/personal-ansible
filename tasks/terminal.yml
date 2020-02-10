@@ -33,6 +33,7 @@
     - espeak
     - translate-shell
     - rlwrap
+    - mycli
     # - aerc
     
   become: yes

@@ -12,6 +12,7 @@
     - docker-machine
     - docker-compose
     - nnn
+    - jetbrains-toolsbox
     - gcc-fortran
   #  - kr
   become: yes

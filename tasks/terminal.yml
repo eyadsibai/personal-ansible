@@ -33,6 +33,7 @@
     - espeak
     - translate-shell
     - rlwrap
+    # - aerc
     
   become: yes
   become_user: "{{ installer_user }}"

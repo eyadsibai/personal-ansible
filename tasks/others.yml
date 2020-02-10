@@ -18,6 +18,7 @@
     - units
     - wine
     - zeal
+    - pgcli
   become: yes
   become_user: "{{ installer_user }}"
 

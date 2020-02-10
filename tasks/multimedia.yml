@@ -13,6 +13,5 @@
     - mpd
     # - cava
     # - cli-visualizer
-    # - youtube-dl-gui-git
   become: yes
   become_user: "{{ installer_user }}"

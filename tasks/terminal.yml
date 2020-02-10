@@ -34,6 +34,7 @@
     - translate-shell
     - rlwrap
     - mycli
+    - gcalcli
     # - aerc
     
   become: yes

@@ -5,7 +5,7 @@
   with_items:
     - discord
     - android-messages-desktop
-    # - yakyak
+    - yakyak
     - caprine
     - telegram-desktop
     - zoom
@@ -13,7 +13,6 @@
     - qutebrowser
     - brave
     - google-chrome
-    # - whatsie
     # Email, News, Podcasts, and RSS
     - neomutt
     - newsboat

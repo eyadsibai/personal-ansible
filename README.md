@@ -6,6 +6,7 @@
 - upgrade nvidia drivers
 - uncomment color from `/etc/pacman.conf`
 - `yay -S --mflags --skipinteg yakyak`
+- sudo systemctl enable bluetooth.service
 
 
 # for dell laptop

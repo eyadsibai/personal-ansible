@@ -3,7 +3,7 @@
     name: "{{ item }}"
     skip_installed: true
   with_items:          
-    # - alacritty
+    - alacritty
     # - mlterm
     # - termite
     - hyper
@@ -30,6 +30,5 @@
     - thefuck
     - tree
     - st-luke-git
-    # - lastpass-cli
   become: yes
   become_user: "{{ installer_user }}"

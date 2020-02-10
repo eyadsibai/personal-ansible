@@ -1,17 +1,27 @@
-          - arandr
-          - networkmanager-dmenu
-          - notmuch
-          - offlineimap
-          - pulsemixer
-          - python-i3-py
-          - python-pretty-cron
-          - rofi
-          - rofi-calc
-          - rofi-emoji
-          - rofi-scripts
-          - units
-          - wine
-          - zeal
+- name: Install apps
+  aur:
+    name: "{{ item }}"
+    skip_installed: true
+  with_items:
+    - arandr
+    - networkmanager-dmenu
+    - offlineimap
+    - bluemans
+    - rofi
+    - rofi-scripts
+    - rofi-calc
+    - rofi-emoji
+    - pulsemixer
+    - python-i3-py
+    - python-pretty-cron
+    - notmuch
+    - units
+    - wine
+    - zeal
+  become: yes
+  become_user: "{{ installer_user }}"
+
+
           # - advanced-ssh-config
           # - etcher
           # - hostsblock?

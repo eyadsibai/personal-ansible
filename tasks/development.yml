@@ -14,6 +14,7 @@
     - nnn
     - jetbrains-toolsbox
     - gcc-fortran
+    - maven
   #  - kr
   become: yes
   become_user: "{{ installer_user }}"

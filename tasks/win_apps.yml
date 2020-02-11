@@ -1,0 +1,53 @@
+# `choco list -lo -r -y | % {  $_.Split("|")[0] }`
+# https://docs.ansible.com/ansible/2.6/modules/win_chocolatey_module.html
+
+- 7zip
+- authy-desktop
+- autohotkey
+-autoruns
+- bitwarden
+- brave
+- ccleaner
+- choco-cleaner
+- chocolatey
+- discord
+- dropbox
+- dupeguru
+- Everything
+- filezilla
+- font-awesome-font
+- FreeDownloadManager
+- git
+- GoogleChrome
+- hackfont
+- hwinfo
+- jetbrainstoolbox
+- malwarebytes
+- microsoft-teams
+- mpv
+- nextcloud-client
+- nexusfont
+- nordvpn
+- paint.net
+- pc-decrapifier
+- phraseexpress
+
+- procexp
+- python3
+- qutebrowser
+- rufus
+- signal
+- slack
+- steam
+- sublimetext3
+- teamviewer
+- unchecky
+- vlc
+- vscode
+- WhatsApp
+- winscp
+- wiztree
+- wox
+- yakyak
+- youtube-dl
+- zoom

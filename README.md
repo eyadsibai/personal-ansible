@@ -11,3 +11,7 @@
 
 # for dell laptop
 - sudo pacman -S fwupd
+
+
+# list of explicit packages installed on ur system
+- pacman -Qqe  > pkgs.txt

@@ -12,4 +12,5 @@
     - pidgin
     - whatsapp-nativefier
     - palemoon-bin
+    - manjaro-hello
   become: yes

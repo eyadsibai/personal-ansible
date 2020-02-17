@@ -7,7 +7,8 @@
 - uncomment color from `/etc/pacman.conf`
 - `yay -S --mflags --skipinteg yakyak`
 - `sudo systemctl enable bluetooth.service`
-- echo "include /usr/share/nano/*.nanorc" >> ~/.nanorc or
+- echo "include /usr/share/nano/*.nanorc" >> ~/.nanorc
+- echo "export ZSH=/usr/share/oh-my-zsh" >> ~/.zshrc
 
 
 

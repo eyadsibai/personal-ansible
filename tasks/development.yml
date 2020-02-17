@@ -15,6 +15,7 @@
     - jetbrains-toolsbox
     - gcc-fortran
     - maven
+    - nano-syntax-highlighting
   #  - kr
   become: yes
   become_user: "{{ installer_user }}"

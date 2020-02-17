@@ -35,6 +35,7 @@
     - rlwrap
     - mycli
     - gcalcli
+    - net-tools
     # - aerc
     
   become: yes

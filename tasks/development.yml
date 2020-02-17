@@ -16,6 +16,7 @@
     - gcc-fortran
     - maven
     - nano-syntax-highlighting
+    - oh-my-zsh-git
   #  - kr
   become: yes
   become_user: "{{ installer_user }}"
@@ -67,5 +68,4 @@
 #   become_user: "{{ user }}"
 
 
-# TODO install oh-my-zsh
 # install conda

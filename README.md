@@ -7,7 +7,8 @@
 - uncomment color from `/etc/pacman.conf`
 - `yay -S --mflags --skipinteg yakyak`
 - `sudo systemctl enable bluetooth.service`
-- cat /usr/share/nano/nanorc.nanorc > ~/.nanorc
+- echo "include /usr/share/nano/*.nanorc" >> ~/.nanorc or
+
 
 
 # for dell laptop

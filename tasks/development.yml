@@ -17,6 +17,7 @@
     - maven
     - nano-syntax-highlighting
     - oh-my-zsh-git
+    - ncpamixer
   #  - kr
   become: yes
   become_user: "{{ installer_user }}"
@@ -63,9 +64,5 @@
   user:
     name: '{{ user }}'
     shell: /bin/zsh
-# - name: install oh-my-zsh
-#   become: yes
-#   become_user: "{{ user }}"
-
 
 # install conda

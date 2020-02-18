@@ -36,6 +36,7 @@
     - mycli
     - gcalcli
     - net-tools
+    - bitwarden-rofi
     # - aerc
     
   become: yes

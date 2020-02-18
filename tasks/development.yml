@@ -18,6 +18,7 @@
     - nano-syntax-highlighting
     - oh-my-zsh-git
     - ncpamixer
+    - paman
   #  - kr
   become: yes
   become_user: "{{ installer_user }}"

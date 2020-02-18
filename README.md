@@ -18,3 +18,6 @@
 
 # list of explicit packages installed on ur system
 - pacman -Qqe  > pkgs.txt
+
+## resources:
+https://linuxhint.com/pulseaudio_arch_linux/

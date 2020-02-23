@@ -23,6 +23,9 @@
     - xclip
     - i3-layout-manager-git
     - i3ass
+    - rofi-surfraw-git
+#     - lyvi-git
+
     - feh
   become: yes
   become_user: "{{ installer_user }}"

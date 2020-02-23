@@ -12,7 +12,7 @@
     - docker-machine
     - docker-compose
     - nnn
-    - jetbrains-toolsbox
+    - jetbrains-toolbox
     - gcc-fortran
     - maven
     - nano-syntax-highlighting

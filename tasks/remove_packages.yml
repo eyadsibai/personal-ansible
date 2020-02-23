@@ -1,16 +1,6 @@
 - name: Recursively remove packages
   pacman:
-    name: "{{ item }}"
+    name: ['thunderbird', 'vlc', 'micro-manjaro', 'st-manjaro', 'hexchat', 'pidgin', 'palemoon-bin','manjaro-hello']
     state: absent
     recurse: yes
-  with_items:
-    - thunderbird
-    - vlc
-    - micro-manjaro
-    - st-manjaro
-    - hexchat
-    - pidgin
-    - whatsapp-nativefier
-    - palemoon-bin
-    - manjaro-hello
   become: yes

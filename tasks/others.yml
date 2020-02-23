@@ -22,6 +22,8 @@
     - bitwarden-rofi-git
     - xclip
     - i3-layout-manager-git
+    - i3ass
+    - feh
   become: yes
   become_user: "{{ installer_user }}"
 

@@ -24,7 +24,7 @@
     - include_tasks: tasks/multimedia.yml
     - include_tasks: tasks/office.yml
     - include_tasks: tasks/terminal.yml
-#    - include_tasks: tasks/others.yml
+    - include_tasks: tasks/others.yml
 
   post_tasks:
     - name: Remove the user "{{ installer_user }}"

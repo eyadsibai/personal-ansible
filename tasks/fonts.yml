@@ -15,3 +15,4 @@
 #           - ttf-emojione
         become: yes
         become_user: "{{ installer_user }}"
+        ignore_errors: yes

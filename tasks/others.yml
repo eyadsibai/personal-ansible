@@ -19,6 +19,9 @@
     - wine
     - zeal
     - pgcli
+    - bitwarden-rofi-git
+    - xclip
+    - i3-layout-manager-git
   become: yes
   become_user: "{{ installer_user }}"
 

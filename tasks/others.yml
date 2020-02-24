@@ -19,11 +19,11 @@
     - wine
     - zeal
     - pgcli
-    - bitwarden-rofi-git
     - xclip
     - i3-layout-manager-git
     - i3ass
     - rofi-surfraw-git
+    - git-crypt
 #     - lyvi-git
 
     - feh

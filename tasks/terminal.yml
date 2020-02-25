@@ -37,6 +37,7 @@
     - gcalcli
     - net-tools
     - bitwarden-rofi-git
+    - neovim
     # - aerc
     
   become: yes

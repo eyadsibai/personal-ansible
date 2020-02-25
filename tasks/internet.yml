@@ -17,7 +17,7 @@
     - newsboat
     - haxor-news
     - skypeforlinux-stable-bin
-    # - rainbowstream
+    - rainbowstream
     # Torrent
     # - transmission-cli
     # - transmission-cli-remote

@@ -49,6 +49,9 @@
     - ncpamixer
     - rofi-dmenu
     - dmenufm
+    - unimatrix
+    - pyradio-git
+    - lsd
     # - aerc
     
   become: yes

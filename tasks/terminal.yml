@@ -39,7 +39,7 @@
     - pamac-snap-plugin
     - cli-visualizer
     - cava
-    - gitsome
+    # - gitsome
     - xsv
     - tree
     - st-luke-git

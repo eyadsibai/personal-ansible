@@ -2,5 +2,5 @@
   pacman:
     name: ['thunderbird', 'vlc', 'micro-manjaro', 'st-manjaro', 'hexchat', 'pidgin', 'palemoon-bin','manjaro-hello']
     state: absent
-    recurse: yes
+    extra_args: " --recursive"
   become: yes

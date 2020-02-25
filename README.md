@@ -10,6 +10,7 @@
 - `echo "include /usr/share/nano/*.nanorc" >> ~/.nanorc`
 -  `cp /usr/share/oh-my-zsh/zshrc ~/.zshrc`
 - `rm -rf ~./'.moonchild productions'`
+- # pacman -Rdd dmenu-manjaro
 
 
 

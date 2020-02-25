@@ -10,6 +10,7 @@
     - rofi
     - rofi-scripts
     - rofi-calc
+    - rofimoji
     - rofi-emoji
     - pulsemixer
     - python-i3-py
@@ -22,7 +23,16 @@
     - xclip
     - i3-layout-manager-git
     - i3ass
+    - emoj
+    - bcal
+    - angband
+    - curseofwar
     - rofi-surfraw-git
+    - grv
+    - ccat
+    - watson
+    - pdfgrep
+    - howdoi
     - git-crypt
     - jp2a
     - nitrogen

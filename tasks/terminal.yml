@@ -28,6 +28,7 @@
     - unzip
     - unrar
     - w3m
+    - ledger
     - xcape
     - mediainfo
     - task-spooler
@@ -35,6 +36,11 @@
     - ncdu
     - calcurse
     - thefuck
+    - pamac-snap-plugin
+    - cli-visualizer
+    - cava
+    - gitsome-git
+    - xsv
     - tree
     - st-luke-git
     - espeak
@@ -104,6 +110,9 @@
     - hub
     - python-soccer-cli-git
     - fd
+    - spotify-cli-linux
+    - prem
+    - cawbird
     # - aerc
     
   become: yes

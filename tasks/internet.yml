@@ -12,7 +12,6 @@
     - slack-desktop
     - qutebrowser
     - brave
-    - google-chrome
     # Email, News, Podcasts, and RSS
     - neomutt
     - newsboat

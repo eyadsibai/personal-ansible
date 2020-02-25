@@ -42,6 +42,7 @@
     - net-tools
     - bitwarden-rofi-git
     - neovim
+    - broot
     # - aerc
     
   become: yes

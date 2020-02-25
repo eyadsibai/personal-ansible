@@ -24,14 +24,7 @@
     - whatsapp-nativefier-dark
     - dropbox
     - signal-desktop
-  become: yes
-  become_user: "{{ installer_user }}"
-  
-- name: Install software development tools
-  aur:
-    name: "{{ item }}"
-    skip_installed: true
-  with_items:
+
     - micro-bin
     - tig
     - git
@@ -48,59 +41,7 @@
     - oh-my-zsh-git
     - ncpamixer
     - paman
-  #  - kr
-  become: yes
-  become_user: "{{ installer_user }}"
 
-- name: Install visual studio extensions
-  include_role:
-    name: gantsign.visual-studio-code-extensions
-  vars:
-    users:
-      - username: "{{ user }}"
-        visual_studio_code_extensions:
-          - ms-python.python
-          - redhat.vscode-yaml
-          - vscoss.vscode-ansible
-          - tyriar.sort-lines
-          - christian-kohler.path-intellisense
-          - akamud.vscode-theme-onedark
-          - mechatroner.rainbow-csv
-          - shyykoserhiy.vscode-spotify
-          - davidanson.vscode-markdownlint
-          - donjayamanne.githistory
-          - eamodio.gitlens
-          - vscode-icons-team.vscode-icons
-          - visualstudioexptteam.vscodeintellicode
-          - ms-azuretools.vscode-docker
-          - ms-vscode.powershell
-          - ms-vsliveshare.vsliveshare
-          - ms-vscode-remote.remote-ssh
-          - ms-vscode-remote.remote-ssh-edit
-          - waderyan.gitblame
-          - kiteco.kite
-          - teabyii.ayu
-
-
-        visual_studio_code_extensions_absent:
-          - seanmcbreen.Spell
-          - donjayamanne.jupyter
-
-    become: true
-    become_user: "{{ user }}"
-
-- name: set default shell for users
-  become: yes
-  user:
-    name: '{{ user }}'
-    shell: /bin/zsh
-
-# install conda
-- name: Install apps
-  aur:
-    name: "{{ item }}"
-    skip_installed: true
-  with_items:
     # Media
     - youtube-dl
     - mpv
@@ -109,29 +50,14 @@
     - youtube-viewer
     - ncmpcpp
     - mpd
-    # - cava
-    # - cli-visualizer
-  become: yes
-  become_user: "{{ installer_user }}"
-
-- name: Install apps
-  aur:
-    name: "{{ item }}"
-    skip_installed: true
-  with_items:
+    - cava
+    - cli-visualizer
     # Docs and PDF
     - zathura
     - zathura-pdf-mupdf
     - pdftk
     - mupdf
-  become: yes
-  become_user: "{{ installer_user }}"
-  
-- name: Install apps
-  aur:
-    name: "{{ item }}"
-    skip_installed: true
-  with_items:
+  #  - kr
     - sc-im
     - alacritty
     - alacritty-terminfo
@@ -243,15 +169,6 @@
     - prem
     - cawbird
     # - aerc
-    
-  become: yes
-  become_user: "{{ installer_user }}"
-
-- name: Install apps
-  aur:
-    name: "{{ item }}"
-    skip_installed: true
-  with_items:
     - arandr
     - networkmanager-dmenu
     - offlineimap
@@ -290,26 +207,61 @@
     - catimg
     - neofetch
 #     - lyvi-git
-
     - feh
+    - ttf-ms-fonts
+    - ttf-amiri
+    - ttf-arabeyes-fonts
+    - ttf-sil-lateef
+    - ttf-sil-scheherazade
+    - ttf-linux-libertine
+    - ttf-inconsolata
+    - ttf-unifont
+    - siji-git
+    - ttf-emojione
   become: yes
   become_user: "{{ installer_user }}"
+  ignore_errors: yes
 
-- name: Install fonts
-  aur:
-    name: "{{ item }}"
-    skip_installed: true
-    with_items:
-      - ttf-ms-fonts
-      - ttf-amiri
-      - ttf-arabeyes-fonts
-      - ttf-sil-lateef
-      - ttf-sil-scheherazade
-      - ttf-linux-libertine
-      - ttf-inconsolata
-      - ttf-unifont
-      - siji-git
-#     - ttf-emojione
-    become: yes
-    become_user: "{{ installer_user }}"
-    ignore_errors: yes
+
+- name: Install visual studio extensions
+  include_role:
+    name: gantsign.visual-studio-code-extensions
+  vars:
+    users:
+      - username: "{{ user }}"
+        visual_studio_code_extensions:
+          - ms-python.python
+          - redhat.vscode-yaml
+          - vscoss.vscode-ansible
+          - tyriar.sort-lines
+          - christian-kohler.path-intellisense
+          - akamud.vscode-theme-onedark
+          - mechatroner.rainbow-csv
+          - shyykoserhiy.vscode-spotify
+          - davidanson.vscode-markdownlint
+          - donjayamanne.githistory
+          - eamodio.gitlens
+          - vscode-icons-team.vscode-icons
+          - visualstudioexptteam.vscodeintellicode
+          - ms-azuretools.vscode-docker
+          - ms-vscode.powershell
+          - ms-vsliveshare.vsliveshare
+          - ms-vscode-remote.remote-ssh
+          - ms-vscode-remote.remote-ssh-edit
+          - waderyan.gitblame
+          - kiteco.kite
+          - teabyii.ayu
+
+
+        visual_studio_code_extensions_absent:
+          - seanmcbreen.Spell
+          - donjayamanne.jupyter
+
+    become: true
+    become_user: "{{ user }}"
+
+- name: set default shell for users
+  become: yes
+  user:
+    name: '{{ user }}'
+    shell: /bin/zsh

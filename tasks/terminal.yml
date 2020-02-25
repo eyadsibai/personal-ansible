@@ -2,7 +2,8 @@
   aur:
     name: "{{ item }}"
     skip_installed: true
-  with_items:          
+  with_items:
+    - sc-im
     - alacritty
     - alacritty-terminfo
     - kitty
@@ -13,6 +14,7 @@
     - hyper
     - curl
     - crazydiskinfo
+    - rainbowstream
     - ack
     - parallel
     - tmux
@@ -58,6 +60,49 @@
     - cht.sh
     - glances
     - lazygit
+    - slap
+    - mps-youtube
+    - navi
+    - termshark-bin
+    - slack-term
+    - no-more-secrets
+    - rtv
+    - playerctl
+    - spotify-dl-git
+    - spotify-tui
+    - nodejs-fx
+    - cointop
+    - patat-bin
+    - fff
+    - termgraph-git
+    - lsix
+    - fzf
+    - go
+    - python-mdv-git
+    - ansiweather
+    - khal
+    - ddgr
+    - s
+    - googler
+    # - mopidy-spotify
+    # - saws
+    - aws-cli
+    - castero-git
+    - hnwatch
+    - termdown
+    - ditaa
+    - terminal-parrot
+    - gtop
+    - asciinema
+    - python-mdv-git
+    - fdupes
+    - rmlint
+    - wtfutil-bin
+    - s-tui
+    - autojump
+    - thefuck
+    - hub
+    - python-soccer-cli-git
     - fd
     # - aerc
     

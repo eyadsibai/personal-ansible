@@ -43,6 +43,7 @@
     - bitwarden-rofi-git
     - neovim
     - broot
+    - stig
     # - aerc
     
   become: yes

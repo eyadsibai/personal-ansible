@@ -14,7 +14,7 @@
 
 
 
-# for dell laptop
+# for dell/thinkpad laptop
 - sudo pacman -S fwupd
 
 

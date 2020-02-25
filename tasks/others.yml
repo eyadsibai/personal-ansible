@@ -24,6 +24,11 @@
     - i3ass
     - rofi-surfraw-git
     - git-crypt
+    - jp2a
+    - nitrogen
+    - xdotool
+    - chafa
+    - catimg
 #     - lyvi-git
 
     - feh

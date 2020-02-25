@@ -4,8 +4,12 @@
     skip_installed: true
   with_items:          
     - alacritty
+    - alacritty-terminfo
+    - kitty
+    - kitty-terminfo
     # - mlterm
-    # - termite
+    - termite
+    - termite-terminfo
     - hyper
     - curl
     - ack

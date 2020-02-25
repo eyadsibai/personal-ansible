@@ -1,4 +1,4 @@
-- hosts: localhost
+- hosts: laptop
   vars:
     user: eyad
     installer_user: aur_builder # this is needed since aur doesn't like to install with root 

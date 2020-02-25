@@ -25,4 +25,4 @@
 
 ## resources
 
-https://linuxhint.com/pulseaudio_arch_linux/
+<https://linuxhint.com/pulseaudio_arch_linux/>

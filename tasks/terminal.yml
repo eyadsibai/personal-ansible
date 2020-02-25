@@ -48,6 +48,7 @@
     - surfraw
     - ncpamixer
     - rofi-dmenu
+    - dmenufm
     # - aerc
     
   become: yes

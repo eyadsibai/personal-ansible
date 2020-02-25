@@ -12,6 +12,7 @@
     - termite-terminfo
     - hyper
     - curl
+    - crazydiskinfo
     - ack
     - parallel
     - tmux

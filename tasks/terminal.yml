@@ -45,6 +45,9 @@
     - neovim
     - broot
     - stig
+    - surfraw
+    - ncpamixer
+    - rofi-dmenu
     # - aerc
     
   become: yes

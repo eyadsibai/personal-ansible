@@ -52,7 +52,13 @@
     - unimatrix
     - pyradio-git
     - lsd
+    - httpie
+    - tldr
     - nvtop
+    - cht.sh
+    - glances
+    - lazygit
+    - fd
     # - aerc
     
   become: yes

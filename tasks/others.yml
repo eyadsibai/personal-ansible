@@ -1,50 +1,4 @@
-- name: Install apps
-  aur:
-    name: "{{ item }}"
-    skip_installed: true
-  with_items:
-    - arandr
-    - networkmanager-dmenu
-    - offlineimap
-    - blueman
-    - rofi
-    - rofi-scripts
-    - rofi-calc
-    - rofimoji
-    - rofi-emoji
-    - pulsemixer
-    - python-i3-py
-    - python-pretty-cron
-    - notmuch
-    - units
-    - wine
-    - zeal
-    - pgcli
-    - xclip
-    - i3-layout-manager-git
-    - i3ass
-    - emoj
-    - bcal
-    - angband
-    - curseofwar
-    - rofi-surfraw-git
-    - grv
-    - ccat
-    - watson
-    - pdfgrep
-    - howdoi
-    - git-crypt
-    - jp2a
-    - nitrogen
-    - xdotool
-    - chafa
-    - catimg
-    - neofetch
-#     - lyvi-git
 
-    - feh
-  become: yes
-  become_user: "{{ installer_user }}"
 
 
           # - advanced-ssh-config
@@ -55,7 +9,6 @@
           # - libaacs
           # - libmpcdec
           # - onedrive
-          # - playerctl
           # - python-httplib2 # for calcurse-caldav
           # - python-pywal
           # - safeeyes

@@ -18,13 +18,7 @@
   tasks:
     - include_tasks: tasks/remove_packages.yml
     - include_tasks: tasks/install_requirements.yml
-    - include_tasks: tasks/internet.yml
-    - include_tasks: tasks/fonts.yml
-    - include_tasks: tasks/development.yml
-    - include_tasks: tasks/multimedia.yml
-    - include_tasks: tasks/office.yml
-    - include_tasks: tasks/terminal.yml
-    - include_tasks: tasks/others.yml
+    - include_tasks: tasks/install_packages.yml
 
   post_tasks:
     - name: Remove the user "{{ installer_user }}"

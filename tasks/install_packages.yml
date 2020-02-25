@@ -148,7 +148,7 @@
     # - mopidy-spotify
     # - saws
     - aws-cli
-    - castero-git
+    # - castero-git
     - hnwatch
     - termdown
     - ditaa

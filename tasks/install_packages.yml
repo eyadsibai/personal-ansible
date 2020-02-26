@@ -133,104 +133,103 @@
 
 - name: Install using aur
   aur:
-    name: "{{ item }}"
+    name:
+      - android-messages-desktop
+      - yakyak
+      - zoom
+      - slack-desktop
+      # Email, News, Podcasts, and RSS
+      - haxor-news
+      - skypeforlinux-stable-bin
+      - rainbowstream
+      - gitter
+      - teamviewer
+      - whatsapp-nativefier-dark
+      - dropbox
+      - micro-bin
+      - visual-studio-code-bin
+      - jetbrains-toolbox
+      - oh-my-zsh-git
+      - paman
+      - spotify
+      - cava
+      - cli-visualizer
+      - hyper
+      - crazydiskinfo
+      - rainbowstream
+      - sc-im
+      #  - kr
+      # - mlterm
+      # - gitsome
+      - xsv
+      - task-spooler
+      - urlview
+      - s3cmd
+      - st-luke-git
+      - mycli
+      - gcalcli
+      - bitwarden-rofi-git
+      - stig
+      - ncpamixer
+      - rofi-dmenu
+      - dmenufm
+      - unimatrix-git
+      - pyradio-git
+      - nvtop
+      - cht.sh
+      - lazygit
+      - navi
+      - termshark-bin
+      - slack-term
+      - no-more-secrets
+      - spotify-dl-git
+      - spotify-tui
+      - cointop
+      - nodejs-fx
+      - patat-bin
+      - termgraph-git
+      - lsix
+      - python-mdv-git
+      - ansiweather
+      - ddgr
+      - s
+      # - mopidy-spotify
+      # - saws
+      - hnwatch
+      - ditaa
+      - terminal-parrot
+      - python-mdv-git
+      - wtfutil-bin
+      - autojump
+      - python-soccer-cli-git
+      - prem
+      - cawbird
+      - tizonia-all
+      # - aerc
+      - rofi-calc
+      - python-i3-py
+      - pgcli
+      - i3-layout-manager-git
+      - i3ass
+      - rofi-surfraw-git
+      - grv
+      - ccat
+      - watson
+      - pdfgrep
+      - howdoi
+      #  - lyvi-git
+      - ttf-ms-fonts
+      - ttf-amiri
+      - ttf-arabeyes-fonts
+      - ttf-sil-lateef
+      - ttf-sil-scheherazade
+      - ttf-linux-libertine
+      - ttf-inconsolata
+      - ttf-unifont
+      - siji-git
+      - ttf-twemoji-color
     skip_installed: true
-  with_items:
-    - android-messages-desktop
-    - yakyak
-    - zoom
-    - slack-desktop
-    # Email, News, Podcasts, and RSS
-    - haxor-news
-    - skypeforlinux-stable-bin
-    - rainbowstream
-    - gitter
-    - teamviewer
-    - whatsapp-nativefier-dark
-    - dropbox
-    - micro-bin
-    - visual-studio-code-bin
-    - jetbrains-toolbox
-    - oh-my-zsh-git
-    - paman
-    - spotify
-    - cava
-    - cli-visualizer
-    - hyper
-    - crazydiskinfo
-    - rainbowstream
-    - sc-im
-  #  - kr
-    # - mlterm
-    # - gitsome
-    - xsv
-    - task-spooler
-    - urlview
-    - s3cmd
-    - st-luke-git
-    - mycli
-    - gcalcli
-    - bitwarden-rofi-git
-    - stig
-    - ncpamixer
-    - rofi-dmenu
-    - dmenufm
-    - unimatrix-git
-    - pyradio-git
-    - nvtop
-    - cht.sh
-    - lazygit
-    - navi
-    - termshark-bin
-    - slack-term
-    - no-more-secrets
-    - spotify-dl-git
-    - spotify-tui
-    - cointop
-    - nodejs-fx
-    - patat-bin
-    - termgraph-git
-    - lsix
-    - python-mdv-git
-    - ansiweather
-    - ddgr
-    - s
-    # - mopidy-spotify
-    # - saws
-    - hnwatch
-    - ditaa
-    - terminal-parrot
-    - python-mdv-git
-    - wtfutil-bin
-    - autojump
-    - python-soccer-cli-git
-    - prem
-    - cawbird
-    - tizonia-all
-    # - aerc
-    - rofi-calc
-    - python-i3-py
-    - pgcli
-    - i3-layout-manager-git
-    - i3ass
-    - rofi-surfraw-git
-    - grv
-    - ccat
-    - watson
-    - pdfgrep
-    - howdoi
-#     - lyvi-git
 
-    - ttf-ms-fonts
-    - ttf-amiri
-    - ttf-arabeyes-fonts
-    - ttf-sil-lateef
-    - ttf-sil-scheherazade
-    - ttf-linux-libertine
-    - ttf-inconsolata
-    - ttf-unifont
-    - siji-git
-    - ttf-twemoji-color
   become: yes
   become_user: "{{ installer_user }}"
   ignore_errors: yes

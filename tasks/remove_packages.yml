@@ -4,3 +4,10 @@
     state: absent
     extra_args: " --recursive"
   become: yes
+
+- name: remove manjaro dmenu
+  pacman:
+    name: "dmenu-manjaro"
+    state: absent
+    extra_args: " --remove --nodeps"
+  become: yes

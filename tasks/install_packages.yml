@@ -121,7 +121,6 @@
     - cht.sh
     - glances
     - lazygit
-    - slap
     - mps-youtube
     - navi
     - termshark-bin
@@ -164,9 +163,9 @@
     - hub
     - python-soccer-cli-git
     - fd
-    - spotify-cli-linux
     - prem
     - cawbird
+    - tizonia-all
     # - aerc
     - arandr
     - networkmanager-dmenu

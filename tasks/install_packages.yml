@@ -57,6 +57,7 @@
       - zsh
       - jq
       - yq
+      - sl
       - speedtest-cli
       - dialog
       - unzip
@@ -129,6 +130,7 @@
       - python-pywal
       - timeshift
       - wavpack
+      - steam-manjaro
     state: present
   become: yes
 
@@ -223,7 +225,6 @@
     - howdoi
 #     - lyvi-git
 
-
     - ttf-ms-fonts
     - ttf-amiri
     - ttf-arabeyes-fonts
@@ -237,6 +238,7 @@
   become: yes
   become_user: "{{ installer_user }}"
   ignore_errors: yes
+  upgrade: true
 
 
 - name: Install visual studio extensions

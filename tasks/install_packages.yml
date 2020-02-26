@@ -125,6 +125,10 @@
       - catimg
       - neofetch
       - feh
+      - etcher
+      - python-pywal
+      - timeshift
+      - wavpack
     state: present
   become: yes
 

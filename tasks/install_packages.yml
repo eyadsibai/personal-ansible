@@ -42,7 +42,7 @@
       - dmenufm
       - unimatrix-git
       - pyradio-git
-      - nvtop
+      # - nvtop only when u have nvidia graphics card
       - cht.sh
       - lazygit
       - navi
@@ -225,7 +225,6 @@
 
   become: yes
   become_user: "{{ installer_user }}"
-  ignore_errors: yes
 
 
 - name: Install visual studio extensions

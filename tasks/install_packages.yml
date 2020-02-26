@@ -239,7 +239,6 @@
   become: yes
   become_user: "{{ installer_user }}"
   ignore_errors: yes
-  upgrade: true
 
 
 - name: Install visual studio extensions

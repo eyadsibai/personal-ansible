@@ -215,7 +215,7 @@
     - ttf-inconsolata
     - ttf-unifont
     - siji-git
-    - ttf-emojione
+    - ttf-twemoji-color
   become: yes
   become_user: "{{ installer_user }}"
   ignore_errors: yes

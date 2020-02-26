@@ -268,7 +268,9 @@
           - ms-vscode-remote.remote-ssh-edit
           - waderyan.gitblame
           - kiteco.kite
+          - dcasella.i3
           - teabyii.ayu
+          - vscoss.vscode-ansible
 
 
         visual_studio_code_extensions_absent:

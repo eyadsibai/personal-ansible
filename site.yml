@@ -6,6 +6,7 @@
     - name: update pacman cache
       pacman:
         update_cache: yes
+        upgrade: yes
     - name: create user "{{ installer_user }}"
       user: name="{{ installer_user }}" group=wheel
     - lineinfile:

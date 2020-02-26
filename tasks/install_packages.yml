@@ -1,211 +1,225 @@
+- name: Run the equivalent of "pacman -Syu" as a separate step
+  pacman:
+    update_cache: yes
+    upgrade: yes
+
+- name: install packages from the community and extra
+  pacman:
+    name:
+      - discord
+      - caprine # fb messenger
+      - telegram-desktop
+      - qutebrowser
+      - brave
+      - neomutt #email client
+      - tor
+      - signal-desktop
+      - git
+      - tig
+      - highlight
+      - docker
+      - docker-machine
+      - docker-compose
+      - nnn
+      - gcc-fortran
+      - maven
+      - nano
+      - nano-syntax-highlighting
+      - youtube-dl
+      # Media
+      - mpv
+      - cmus
+      - youtube-viewer
+      - ncmpcpp
+      - mpd
+      - mopidy
+      # Docs and PDF
+      - zathura
+      - zathura-cb
+      - zathura-djvu
+      - zathura-ps
+      - zathura-pdf-mupdf
+      - pdftk
+      - mupdf
+      - mupdf-tools
+      - alacritty
+      - alacritty-terminfo
+      - kitty
+      - kitty-terminfo
+      - sbxkb
+      - termite
+      - termite-terminfo
+      - ack
+      - curl
+      - tmux
+      - powerline
+      - rclone
+      - zsh
+      - jq
+      - yq
+      - speedtest-cli
+      - dialog
+      - unzip
+      - unrar
+      - w3m
+      - ledger
+      - xcape
+      - mediainfo
+      - ncdu
+      - calcurse
+      - thefuck
+      - pamac-snap-plugin
+      - tree
+      - espeak
+      - translate-shell
+      - rlwrap
+      - net-tools
+      - neovim
+      - broot
+      - surfraw
+      - rofi
+      - rofi-scripts
+      - rofimoji
+      - lsd
+      - httpie
+      - tldr
+      - glances
+      - rtv
+      - mps-youtube
+      - wireshark-cli
+      - playerctl
+      - fff
+      - fzf
+      - go
+      - khal
+      - gtop
+      - aws-cli
+      - termdown
+      - fdupes
+      - rmlint
+      - asciinema
+      - s-tui
+      - ghi
+      - hub
+      - fd
+      - arandr
+      - morc_menu
+      - networkmanager-dmenu
+      - offlineimap
+      - blueman
+      - newsboat
+      - pulsemixer
+      - notmuch
+      - notmuch-mutt
+      - units
+      - wine
+      - zeal
+      - xclip
+      - angband
+      - curseofwar
+      - git-crypt
+      - jp2a
+      - nitrogen
+      - xdotool
+      - chafa
+      - catimg
+      - neofetch
+      - feh
+    state: present
+  become: yes
+
+
 - name: Install internet packages
   aur:
     name: "{{ item }}"
     skip_installed: true
   with_items:
-    - discord
     - android-messages-desktop
     - yakyak
-    - caprine
-    - telegram-desktop
     - zoom
     - slack-desktop
-    - qutebrowser
-    - brave
     # Email, News, Podcasts, and RSS
-    - neomutt
-    - newsboat
     - haxor-news
     - skypeforlinux-stable-bin
     - rainbowstream
-    - tor
     - gitter
     - teamviewer
     - whatsapp-nativefier-dark
     - dropbox
-    - signal-desktop
-
     - micro-bin
-    - tig
-    - git
-    - highlight
     - visual-studio-code-bin
-    - docker
-    - docker-machine
-    - docker-compose
-    - nnn
     - jetbrains-toolbox
-    - gcc-fortran
-    - maven
-    - nano-syntax-highlighting
     - oh-my-zsh-git
-    - ncpamixer
     - paman
-
-    # Media
-    - youtube-dl
-    - mpv
-    - cmus
     - spotify
-    - youtube-viewer
-    - ncmpcpp
-    - mpd
     - cava
     - cli-visualizer
-    # Docs and PDF
-    - zathura
-    - zathura-pdf-mupdf
-    - pdftk
-    - mupdf
-  #  - kr
-    - sc-im
-    - alacritty
-    - alacritty-terminfo
-    - kitty
-    - kitty-terminfo
-    # - mlterm
-    - termite
-    - termite-terminfo
     - hyper
-    - curl
     - crazydiskinfo
     - rainbowstream
-    - ack
-    - parallel
-    - tmux
-    - speedtest-cli
-    - jq
-    - rclone
-    - dialog
-    - urlview
-    - s3cmd
-    - s4cmd
-    - unzip
-    - unrar
-    - w3m
-    - ledger
-    - xcape
-    - mediainfo
-    - task-spooler
-    - zsh
-    - ncdu
-    - calcurse
-    - thefuck
-    - pamac-snap-plugin
-    - cli-visualizer
-    - cava
+    - sc-im
+  #  - kr
+    # - mlterm
     # - gitsome
     - xsv
-    - tree
+    - task-spooler
+    - urlview
+    - s3cmd
     - st-luke-git
-    - espeak
-    - translate-shell
-    - rlwrap
     - mycli
     - gcalcli
-    - net-tools
     - bitwarden-rofi-git
-    - neovim
-    - broot
     - stig
-    - surfraw
     - ncpamixer
     - rofi-dmenu
     - dmenufm
-    - unimatrix
+    - unimatrix-git
     - pyradio-git
-    - lsd
-    - httpie
-    - tldr
     - nvtop
     - cht.sh
-    - glances
     - lazygit
-    - mps-youtube
     - navi
     - termshark-bin
     - slack-term
     - no-more-secrets
-    - rtv
-    - playerctl
     - spotify-dl-git
     - spotify-tui
-    - nodejs-fx
     - cointop
+    - nodejs-fx
     - patat-bin
-    - fff
     - termgraph-git
     - lsix
-    - fzf
-    - go
     - python-mdv-git
     - ansiweather
-    - khal
     - ddgr
     - s
-    - googler
     # - mopidy-spotify
     # - saws
-    - aws-cli
     - hnwatch
-    - termdown
     - ditaa
     - terminal-parrot
-    - gtop
-    - asciinema
     - python-mdv-git
-    - fdupes
-    - rmlint
     - wtfutil-bin
-    - s-tui
     - autojump
-    - thefuck
-    - hub
     - python-soccer-cli-git
-    - fd
     - prem
     - cawbird
     - tizonia-all
     # - aerc
-    - arandr
-    - networkmanager-dmenu
-    - offlineimap
-    - blueman
-    - rofi
-    - rofi-scripts
     - rofi-calc
-    - rofimoji
-    - rofi-emoji
-    - pulsemixer
     - python-i3-py
-    - python-pretty-cron
-    - notmuch
-    - units
-    - wine
-    - zeal
     - pgcli
-    - xclip
     - i3-layout-manager-git
     - i3ass
-    - emoj
-    - bcal
-    - angband
-    - curseofwar
     - rofi-surfraw-git
     - grv
     - ccat
     - watson
     - pdfgrep
     - howdoi
-    - git-crypt
-    - jp2a
-    - nitrogen
-    - xdotool
-    - chafa
-    - catimg
-    - neofetch
 #     - lyvi-git
-    - feh
+
+
     - ttf-ms-fonts
     - ttf-amiri
     - ttf-arabeyes-fonts

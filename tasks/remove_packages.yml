@@ -1,13 +1,21 @@
 - name: Recursively remove packages
   pacman:
-    name: ['thunderbird', 'vlc', 'micro-manjaro', 'st-manjaro', 'hexchat', 'pidgin', 'palemoon-bin','manjaro-hello']
+    name:
+      - thunderbird
+      - vlc
+      - micro-manjaro
+      - st-manjaro
+      - hexchat
+      - pidgin
+      - palemoon-bin
+      - manjaro-hello
     state: absent
-    extra_args: " --recursive"
+    extra_args: "--recursive"
   become: yes
 
 - name: remove manjaro dmenu
   pacman:
     name: "dmenu-manjaro"
     state: absent
-    extra_args: " --remove --nodeps"
+    force: true
   become: yes

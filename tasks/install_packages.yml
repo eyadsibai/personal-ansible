@@ -3,7 +3,7 @@
     update_cache: yes
     upgrade: yes
 
-- name: install packages from the community and extra
+- name: install packages from the community and extra using pacman
   pacman:
     name:
       - discord
@@ -131,11 +131,12 @@
       - timeshift
       - wavpack
       - steam-manjaro
+      - vlc
     state: present
   become: yes
 
 
-- name: Install internet packages
+- name: Install using aur
   aur:
     name: "{{ item }}"
     skip_installed: true

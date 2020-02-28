@@ -166,6 +166,7 @@
       - mps-youtube
       - wireshark-cli
       - playerctl
+      - mpc
       - fff
       - fzf
       - go

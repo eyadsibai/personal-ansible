@@ -213,6 +213,16 @@
       - pam-gnupg
       - abook
       - mutt-wizard-git
+      - python-themer-git
+      - reaver
+      - wifite
+      - httping
+      # - gnuchess
+      # - crafty
+      - braincurses
+      - goobook-git
+      - clerk-git
+      - wavemon
       #  - lyvi-git
       - ttf-ms-fonts
       - ttf-amiri

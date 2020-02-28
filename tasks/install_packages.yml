@@ -210,6 +210,9 @@
       - wavpack
       - steam-manjaro
       - vlc
+      - pam-gnupg
+      - abook
+      - mutt-wizard-git
       #  - lyvi-git
       - ttf-ms-fonts
       - ttf-amiri

@@ -60,12 +60,11 @@
       - ansiweather
       - ddgr
       - s
-      # - mopidy-spotify
+      - mopidy-spotify
       # - saws
       - hnwatch
       - ditaa
       - terminal-parrot
-      - python-mdv-git
       - wtfutil-bin
       - autojump
       - python-soccer-cli-git

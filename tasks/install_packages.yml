@@ -220,6 +220,8 @@
       # - gnuchess
       # - crafty
       - braincurses
+      - pulseaudio-ctl
+      - sxhkd
       - goobook-git
       - clerk-git
       - wavemon

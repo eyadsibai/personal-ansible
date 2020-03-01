@@ -225,6 +225,7 @@
       - goobook-git
       - clerk-git
       - wavemon
+      - tty-clock
       #  - lyvi-git
       - ttf-ms-fonts
       - ttf-amiri
@@ -236,11 +237,12 @@
       - ttf-unifont
       - siji-git
       - ttf-twemoji-color
+      - mc
+      - nodejs-soccer-go
     skip_installed: true
 
   become: yes
   become_user: "{{ installer_user }}"
-
 
 - name: Install visual studio extensions
   include_role:
@@ -273,7 +275,6 @@
           - teabyii.ayu
           - vscoss.vscode-ansible
 
-
         visual_studio_code_extensions_absent:
           - seanmcbreen.Spell
           - donjayamanne.jupyter
@@ -284,5 +285,5 @@
 - name: set default shell for users
   become: yes
   user:
-    name: '{{ user }}'
+    name: "{{ user }}"
     shell: /bin/zsh

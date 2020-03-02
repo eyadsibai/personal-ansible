@@ -228,6 +228,7 @@
       - tty-clock
       - polybar
       - polybar-scripts
+      - rofi-bluetooth-git
       #  - lyvi-git
       - ttf-ms-fonts
       - ttf-amiri

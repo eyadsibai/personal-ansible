@@ -226,6 +226,8 @@
       - clerk-git
       - wavemon
       - tty-clock
+      - polybar
+      - polybar-scripts
       #  - lyvi-git
       - ttf-ms-fonts
       - ttf-amiri

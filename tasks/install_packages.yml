@@ -274,6 +274,7 @@
           - dcasella.i3
           - teabyii.ayu
           - vscoss.vscode-ansible
+          - pkief.material-icon-theme
 
         visual_studio_code_extensions_absent:
           - seanmcbreen.Spell

@@ -242,6 +242,8 @@
       - ttf-twemoji-color
       - mc
       - nodejs-soccer-go
+      - screenkey
+      - spicetify-cli
     skip_installed: true
 
   become: yes

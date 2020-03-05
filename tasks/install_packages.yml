@@ -238,12 +238,17 @@
       - ttf-linux-libertine
       - ttf-inconsolata
       - ttf-unifont
+      - ttf-weather-icons
       - siji-git
+      - nerd-fonts-complete
       - ttf-twemoji-color
       - mc
       - nodejs-soccer-go
       - screenkey
       - spicetify-cli
+      - mopidy-mpd
+      - mopidy
+      - mopidy-spotify
     skip_installed: true
 
   become: yes

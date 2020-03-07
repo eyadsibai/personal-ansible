@@ -249,6 +249,7 @@
       - mopidy-mpd
       - mopidy
       - mopidy-spotify
+      - urlscan
     skip_installed: true
 
   become: yes

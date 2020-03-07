@@ -13,6 +13,8 @@
 - `echo "include /usr/share/nano/*.nanorc" >> ~/.nanorc`
 - `cp /usr/share/oh-my-zsh/zshrc ~/.zshrc`
 - `rm -rf ~./'.moonchild productions'`
+- sudo chmod 777 /opt/spotify -R
+
 
 ## for dell/thinkpad laptop
 

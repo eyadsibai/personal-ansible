@@ -250,6 +250,7 @@
       - mopidy
       - mopidy-spotify
       - urlscan
+      - byobu
     skip_installed: true
 
   become: yes

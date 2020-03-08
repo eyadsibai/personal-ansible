@@ -251,6 +251,10 @@
       - mopidy-spotify
       - urlscan
       - byobu
+      - colorz
+      - python-colortheif
+      - python-haishoku
+      - mpDris2
     skip_installed: true
 
   become: yes

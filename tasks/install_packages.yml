@@ -249,12 +249,19 @@
       - mopidy-mpd
       - mopidy
       - mopidy-spotify
+      # install thru sudo pip install mopidy-youtube
       - urlscan
       - byobu
       - colorz
       - python-colortheif
       - python-haishoku
       - mpDris2
+      - subliminal
+      - teiler-git
+      - rofi-mpc
+      - rofi-autorandr
+      # - todotxt
+      - task
     skip_installed: true
 
   become: yes

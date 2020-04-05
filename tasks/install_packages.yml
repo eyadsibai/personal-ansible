@@ -34,7 +34,7 @@
       - s3cmd
       - st-luke-git
       - mycli
-      - gcalcli
+#      - gcalcli
       - bitwarden-rofi-git
       - stig
       - ncpamixer
@@ -44,7 +44,7 @@
       - pyradio-git
       # - nvtop only when u have nvidia graphics card
       - cht.sh
-      - lazygit
+      # - lazygit
       - navi
       - termshark-bin
       - slack-term
@@ -120,7 +120,7 @@
       - mupdf
       - mupdf-tools
       - alacritty
-      - alacritty-terminfo
+      #- alacritty-terminfo
       - kitty
       - kitty-terminfo
       - sbxkb
@@ -222,12 +222,12 @@
       - braincurses
       - pulseaudio-ctl
       - sxhkd
-      - goobook-git
+      #- goobook-git
       - clerk-git
       - wavemon
       - tty-clock
       - polybar
-      - polybar-scripts
+      - polybar-scripts-git
       - rofi-bluetooth-git
       #  - lyvi-git
       - ttf-ms-fonts
@@ -253,9 +253,9 @@
       - urlscan
       - byobu
       - colorz
-      - python-colortheif
+      - python-colorthief
       - python-haishoku
-      - mpDris2
+      - mpdris2
       - subliminal
       - teiler-git
       - rofi-mpc

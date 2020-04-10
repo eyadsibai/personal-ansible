@@ -13,7 +13,7 @@
       - teamviewer
       - whatsapp-nativefier-dark
       - dropbox
-      - micro-bin
+      - micro
       - visual-studio-code-bin
       - jetbrains-toolbox
       - oh-my-zsh-git
@@ -260,6 +260,11 @@
       - teiler-git
       - rofi-mpc
       - rofi-autorandr
+      - nethogs
+      - iptraf-ng
+      - nload
+      - monitorix
+      - sysstat
       # - todotxt
       - task
     skip_installed: true

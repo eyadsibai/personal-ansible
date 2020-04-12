@@ -60,6 +60,7 @@
       - ansiweather
       - ddgr
       - s
+      - moc-pulse
       - mopidy-spotify
       # - saws
       - hnwatch

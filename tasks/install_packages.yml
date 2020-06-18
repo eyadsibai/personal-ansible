@@ -1,320 +1,233 @@
 - name: Install using aur
   aur:
-    name:
-      - android-messages-desktop
-      - yakyak
-      - zoom
-      - slack-desktop
-      # Email, News, Podcasts, and RSS
-      - haxor-news
-      - skypeforlinux-stable-bin
-      - rainbowstream
-      - gitter
-      - teamviewer
-      - whatsapp-nativefier-dark
-      - dropbox
-      - flatpak
-      - micro
-      - visual-studio-code-bin
-      - jetbrains-toolbox
-      - oh-my-zsh-git
-      - paman
-      - spotify
-      - cava
-      - cli-visualizer
-      - hyper
-      - crazydiskinfo
-      - rainbowstream
-      - sc-im
-      #  - kr
-      # - mlterm
-      # - gitsome
-      - xsv
-      - task-spooler
-      - urlview
-      - s3cmd
-      - st-luke-git
-      - mycli
-#      - gcalcli
-      - bitwarden-rofi-git
-      - stig
-      - ncpamixer
-      - rofi-dmenu
-      - dmenufm
-      - unimatrix-git
-      - pyradio-git
-      # - nvtop only when u have nvidia graphics card
-      - cht.sh
-      # - lazygit
-      - navi
-      - termshark-bin
-      - slack-term
-      - no-more-secrets
-      - spotify-dl-git
-      - spotify-tui
-      - cointop
-      - nodejs-fx
-      - patat-bin
-      - termgraph-git
-      - lsix
-      - python-mdv-git
-      - ansiweather
-      - ddgr
-      - s
-      - moc-pulse
-      - mopidy-spotify
-      # - saws
-      - hnwatch
-      - ditaa
-      - terminal-parrot
-      - wtfutil-bin
-      - autojump
-      - python-soccer-cli-git
-      - prem
-      - cawbird
-      - tizonia-all-git
-      # - aerc
-      - rofi-calc
-      - python-i3-py
-      - pgcli
-      - i3-layout-manager-git
-      - i3ass
-      - rofi-surfraw-git
-      - grv
-      - ccat
-      - watson
-      - pdfgrep
-      - howdoi
-      - discord
-      - caprine # fb messenger
-      - telegram-desktop
-      - qutebrowser
-      - brave
-      - neomutt #email client
-      - tor
-      - signal-desktop
-      - git
-      - tig
-      - highlight
-      - docker
-      - docker-machine
-      - docker-compose
-      - nnn
-      - gcc-fortran
-      - maven
-      - nano
-      - nano-syntax-highlighting
-      - youtube-dl
-      # Media
-      - mpv
-      - cmus
-      - youtube-viewer
-      - ncmpcpp
-      - mpd
-      - mopidy
-      # Docs and PDF
-      - zathura
-      - zathura-cb
-      - zathura-djvu
-      - zathura-ps
-      - zathura-pdf-mupdf
-      - pdftk
-      - mupdf
-      - mupdf-tools
-      - alacritty
-      #- alacritty-terminfo
-      - kitty
-      - kitty-terminfo
-      - sbxkb
-      - termite
-      - termite-terminfo
-      - ack
-      - curl
-      - tmux
-      - powerline
-      - rclone
-      - zsh
-      - jq
-      - yq
-      - sl
-      - speedtest-cli
-      - dialog
-      - unzip
-      - unrar
-      - w3m
-      - ledger
-      - xcape
-      - mediainfo
-      - ncdu
-      - calcurse
-      - thefuck
-      - pamac-snap-plugin
-      - tree
-      - espeak
-      - translate-shell
-      - rlwrap
-      - net-tools
-      - neovim
-      - broot
-      - surfraw
-      - rofi
-      - rofi-scripts
-      - rofimoji
-      - lsd
-      - httpie
-      - tldr
-      - glances
-      - rtv
-      - mps-youtube
-      - wireshark-cli
-      - playerctl
-      - mpc
-      - fff
-      - fzf
-      - go
-      - khal
-      - gtop
-      - aws-cli
-      - termdown
-      - fdupes
-      - rmlint
-      - asciinema
-      - s-tui
-      - ghi
-      - hub
-      - fd
-      - arandr
-      - morc_menu
-      - networkmanager-dmenu
-      - offlineimap
-      - blueman
-      - newsboat
-      - pulsemixer
-      - notmuch
-      - notmuch-mutt
-      - units
-      - wine
-      - zeal
-      - xclip
-      - angband
-      - curseofwar
-      - git-crypt
-      - jp2a
-      - nitrogen
-      - xdotool
-      - chafa
-      - catimg
-      - neofetch
-      - feh
-      - etcher
-      - python-pywal
-      - timeshift
-      - wavpack
-      - steam-manjaro
-      - vlc
-      - pam-gnupg
-      - abook
-      - mutt-wizard-git
-      - python-themer-git
-      - reaver
-      - wifite
-      - httping
-      # - gnuchess
-      # - crafty
-      - braincurses
-      - pulseaudio-ctl
-      - sxhkd
-      #- goobook-git
-      - clerk-git
-      - wavemon
-      - tty-clock
-      - polybar
-      - polybar-scripts-git
-      - rofi-bluetooth-git
-      #  - lyvi-git
-      - ttf-ms-fonts
-      - ttf-amiri
-      - ttf-arabeyes-fonts
-      - ttf-sil-lateef
-      - ttf-sil-scheherazade
-      - ttf-linux-libertine
-      - ttf-inconsolata
-      - ttf-unifont
-      - ttf-weather-icons
-      - siji-git
-      - nerd-fonts-complete
-      - ttf-twemoji-color
-      - mc
-      - nodejs-soccer-go
-      - screenkey
-      - spicetify-cli
-      - mopidy-mpd
-      - mopidy
-      - mopidy-spotify
-      # install thru sudo pip install mopidy-youtube
-      - urlscan
-      - byobu
-      - colorz
-      - python-colorthief
-      - python-haishoku
-      - mpdris2
-      - subliminal
-      - teiler-git
-      - rofi-mpc
-      - rofi-autorandr
-      - nethogs
-      - iptraf-ng
-      - nload
-      - monitorix
-      - sysstat
-      # - todotxt
-      - task
-    skip_installed: true
+        name:
+              - android-messages-desktop
+              - yakyak
+              - gitter
+              # - teamviewer
+              - whatsapp-nativefier-dark
+              - flatpak
+              - jetbrains-toolbox
+              - paman
+              - cli-visualizer
+              - hyper
+              - crazydiskinfo
+              # - rainbowstream
+              #  - kr
+              # - mlterm
+              # - gitsome
+              - task-spooler
+              - st-luke-git
+              - mycli
+              - gcalcli
+              - bitwarden-rofi-git
+              - rofi-dmenu
+              - dmenufm
+              - unimatrix-git
+              - pyradio-git
+              # - nvtop only when u have nvidia graphics card
+              - cht.sh
+              # - lazygit
+              - navi
+              - termshark-bin
+              - slack-term
+              - no-more-secrets
+              - spotify-dl-git
+              - spotify-tui
+              - nodejs-fx
+              - patat-bin
+              - termgraph-git
+              - lsix
+              - python-mdv-git
+              - ansiweather
+              - ddgr
+              - s
+              - moc-pulse
+              - mopidy-spotify
+              # - saws
+              - hnwatch
+              - ditaa
+              - wtfutil-bin
+              - autojump
+              - python-soccer-cli-git
+              - prem
+              - cawbird
+              - tizonia-all-git
+              # - aerc
+              - rofi-calc
+              - python-i3-py
+              - pgcli
+              - i3-layout-manager-git
+              - i3ass
+              - rofi-surfraw-git
+              - grv
+              - ccat
+              - watson
+              - howdoi
+              - caprine # fb messenger
+              - telegram-desktop
+              - brave
+              - tor
+              - docker-machine
+              - gcc-fortran
+
+              - youtube-viewer
+
+              # Docs and PDF
+              - zathura-cb
+              - zathura-djvu
+              - zathura-ps
+              - zathura-pdf-mupdf
+              - mupdf
+              - mupdf-tools
+              - kitty
+              - kitty-terminfo
+              - shxkb
+              - termite
+              - termite-terminfo
+              - ack
+              - curl
+              - tmux
+              - powerline
+              - rclone
+              - zsh
+              - jq
+              - yq
+              - speedtest-cli
+              - dialog
+
+              - w3m
+              - ledger
+              - xcape
+              - mediainfo
+              - ncdu
+              - calcurse
+              - thefuck
+              - pamac-snap-plugin
+              - tree
+              - espeak
+              - translate-shell
+              - rlwrap
+              - net-tools
+              - neovim
+              - broot
+              - surfraw
+              - rofi
+              - rofi-scripts
+              - rofimoji
+              - lsd
+              - httpie
+              - tldr
+              - glances
+              - rtv
+              - mps-youtube
+              - wireshark-cli
+              - playerctl
+              - mpc
+              - go
+              - khal
+              - aws-cli
+              - termdown
+              - fdupes
+              - rmlint
+              - asciinema
+              - s-tui
+              - ghi
+              - hub
+              - fd
+              - arandr
+              - morc_menu
+              - networkmanager-dmenu
+              - offlineimap
+              - blueman
+              - newsboat
+              - pulsemixer
+              - notmuch
+              - notmuch-mutt
+              - units
+              - wine
+              - zeal
+              - xclip
+              - angband
+              - curseofwar
+              - git-crypt
+              - jp2a
+              - xdotool
+              - chafa
+              - catimg
+              - neofetch
+              - etcher
+              - timeshift
+              - wavpack
+              - steam-manjaro
+              - vlc
+              - pam-gnupg
+              - abook
+              - mutt-wizard-git
+              - python-themer-git
+              - reaver
+              - wifite
+              - httping
+              # - gnuchess
+              # - crafty
+              - braincurses
+              - pulseaudio-ctl
+              - sxhkd
+              #- goobook-git
+              - clerk-git
+              - wavemon
+              - tty-clock
+              - polybar
+              - polybar-scripts-git
+              - goobook-git
+              - clerk-git
+              - wavemon
+              - tty-clock
+              - polybar-scripts
+              - rofi-bluetooth-git
+              #  - lyvi-git
+              - ttf-ms-fonts
+              - ttf-amiri
+              - ttf-arabeyes-fonts
+              - ttf-sil-lateef
+              - ttf-sil-scheherazade
+              - ttf-linux-libertine
+              - ttf-inconsolata
+              - ttf-unifont
+              - ttf-weather-icons
+              - siji-git
+              - nerd-fonts-complete
+              - ttf-twemoji-color
+              - nodejs-soccer-go
+              - spicetify-cli
+              - mopidy-mpd
+              - mopidy
+              - mopidy-spotify
+              # install thru sudo pip install mopidy-youtube
+              - urlscan
+              - byobu
+              - colorz
+              - python-colorthief
+              - python-haishoku
+              - mpdris2
+              - subliminal
+              - teiler-git
+              - rofi-mpc
+              - rofi-autorandr
+              - nethogs
+              - iptraf-ng
+              - nload
+              - monitorix
+              - sysstat
+              # - todotxt
+              - task
+        skip_installed: true
 
   become: yes
   become_user: "{{ installer_user }}"
 
-- name: Install visual studio extensions
-  include_role:
-    name: gantsign.visual-studio-code-extensions
-  vars:
-    users:
-      - username: "{{ user }}"
-        visual_studio_code_extensions:
-          - ms-python.python
-          - redhat.vscode-yaml
-          - vscoss.vscode-ansible
-          - tyriar.sort-lines
-          - christian-kohler.path-intellisense
-          - akamud.vscode-theme-onedark
-          - mechatroner.rainbow-csv
-          - shyykoserhiy.vscode-spotify
-          - davidanson.vscode-markdownlint
-          - donjayamanne.githistory
-          - eamodio.gitlens
-          - vscode-icons-team.vscode-icons
-          - visualstudioexptteam.vscodeintellicode
-          - ms-azuretools.vscode-docker
-          - ms-vscode.powershell
-          - ms-vsliveshare.vsliveshare
-          - ms-vscode-remote.remote-ssh
-          - ms-vscode-remote.remote-ssh-edit
-          - waderyan.gitblame
-          - kiteco.kite
-          - dcasella.i3
-          - teabyii.ayu
-          - vscoss.vscode-ansible
-          - pkief.material-icon-theme
-
-        visual_studio_code_extensions_absent:
-          - seanmcbreen.Spell
-          - donjayamanne.jupyter
-
-    become: true
-    become_user: "{{ user }}"
-
 - name: set default shell for users
   become: yes
   user:
-    name: "{{ user }}"
-    shell: /bin/zsh
+        name: "{{ user }}"
+        shell: /bin/zsh

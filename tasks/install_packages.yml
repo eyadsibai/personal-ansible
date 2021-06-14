@@ -3,15 +3,15 @@
     name:
       - android-messages-desktop
       - yakyak
-      - zoom
-      - slack-desktop
+      # - zoom // installed through nixpkgs
+      # - slack-desktop
       # Email, News, Podcasts, and RSS
-      - haxor-news
-      - skypeforlinux-stable-bin
-      - rainbowstream
-      - gitter
+      # - haxor-news // installed through nixpkgs
+#       - skypeforlinux-stable-bin
+#       - rainbowstream
+#       - gitter
       - teamviewer
-      - whatsapp-nativefier-dark
+#       - whatsapp-nativefier-dark
       - dropbox
       - flatpak
       - micro
@@ -19,12 +19,12 @@
       - jetbrains-toolbox
       - oh-my-zsh-git
       - paman
-      - spotify
+#       - spotify
       - cava
       - cli-visualizer
-      - hyper
+#       - hyper
       - crazydiskinfo
-      - rainbowstream
+#       - rainbowstream
       - sc-im
       #  - kr
       # - mlterm
@@ -113,12 +113,12 @@
       - mpd
       - mopidy
       # Docs and PDF
-      - zathura
-      - zathura-cb
-      - zathura-djvu
-      - zathura-ps
-      - zathura-pdf-mupdf
-      - pdftk
+# #       - zathura
+#       - zathura-cb
+#       - zathura-djvu
+#       - zathura-ps
+#       - zathura-pdf-mupdf
+#       - pdftk
       - mupdf
       - mupdf-tools
       - alacritty
@@ -126,10 +126,8 @@
       - kitty
       - kitty-terminfo
       - sbxkb
-      - termite
-      - termite-terminfo
       - ack
-      - curl
+#       - curl
       - tmux
       - powerline
       - rclone
@@ -143,7 +141,7 @@
       - unrar
       - w3m
       - ledger
-      - xcape
+#       - xcape
       - mediainfo
       - ncdu
       - calcurse
